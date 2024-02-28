@@ -153,7 +153,7 @@ const Collaborator: Component = () => {
             name="extra_info"
             cols="30"
             rows="10"
-            placeholder="Anything else you'd like to add?"
+            placeholder="Anything else you'd like to add? Your major, year, or a project you're working on?"
           ></textarea>
           <input class={styles.btn} type="submit" value="submit" />
         </form>
