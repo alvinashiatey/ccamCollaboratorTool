@@ -1,0 +1,153 @@
+.Collaborator {
+  margin-block-end: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.form.submitted {
+  display: none;
+}
+
+.caption {
+  font-size: calc(var(--fs) / 1.8);
+  line-height: calc(var(--fs) / 1.8);
+}
+
+.form,
+.about {
+  width: 100%;
+}
+
+.about__icon {
+  cursor: pointer;
+  display: none;
+}
+
+.container {
+  width: 100%;
+}
+
+.join__section {
+  padding-block-start: 2rem;
+  overflow-wrap: break-word;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.btn {
+  width: 100%;
+  display: block;
+  margin: 2rem auto;
+  border: none;
+  border-radius: var(--br);
+  padding-inline: 2rem;
+  transition: all 0.3s ease-in-out;
+  background-color: #181818;
+  color: white;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #bebebe;
+  color: #181818;
+}
+
+.error {
+  color: red;
+  font-size: calc(var(--fs) / 1.8);
+}
+
+input {
+  height: max-content;
+}
+
+.input,
+.textarea {
+  display: inline;
+  max-width: 100%;
+  width: 100%;
+  border: none;
+  border-top: 3px solid black;
+  background-color: whitesmoke;
+  filter: contrast(90%);
+  padding-inline: 1rem;
+  color: black;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 5rem;
+  max-height: 15rem;
+  height: fit-content;
+  resize: none;
+  padding-block: 0.5rem;
+  line-height: calc(var(--fs) * 1.2);
+}
+
+.input.empty::placeholder,
+.textarea.empty::placeholder {
+  color: rgba(255, 140, 118, 0.82);
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: rgba(147, 147, 147, 0.6);
+  text-align: justify-all;
+}
+
+.interests {
+  width: 100%;
+  border-block-start: 3px solid black;
+  padding-block: 2rem;
+}
+
+.interests::-webkit-scrollbar {
+  display: none;
+}
+
+.interest__wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.interest {
+  font-size: calc(var(--fs) / 1.5);
+  font-weight: bold;
+  align-self: center;
+  max-width: max-content;
+  border-radius: var(--br);
+  padding-inline: 0.5rem;
+  background-color: whitesmoke;
+  border: 3px solid black;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.interest:hover {
+  transform: scale(1.1);
+}
+
+/*media queries*/
+@media (max-width: 768px) {
+  .Collaborator {
+    gap: 1rem;
+  }
+
+  .form,
+  .about {
+    width: 100%;
+  }
+
+  .about__info {
+    padding-top: 1rem;
+  }
+
+  .about__icon:is(:hover, :focus) + .about__info {
+    display: block;
+  }
+}

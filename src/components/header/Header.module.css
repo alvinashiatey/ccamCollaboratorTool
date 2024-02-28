@@ -1,0 +1,30 @@
+.Header {
+  padding-block: 1.5rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.svg__container {
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.svg__element {
+  display: block;
+  height: 100%;
+  opacity: 0.2;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  line-height: calc(--fs * 1.2);
+  font-weight: bold;
+  z-index: 10;
+}
+
+.title__section {
+  display: flex;
+  justify-content: space-between;
+}

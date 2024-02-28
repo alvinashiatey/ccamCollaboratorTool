@@ -1,0 +1,39 @@
+:root {
+  --wm: 55%;
+  --br: 1rem;
+  --fs: 2rem;
+  --ds: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  --ds-hover: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  font-size: var(--fs);
+  font-family: Helvetica, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: whitesmoke;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-size: var(--fs);
+  font-weight: normal;
+  line-height: calc(var(--fs) * 1.2);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --wm: 85%;
+  }
+}
